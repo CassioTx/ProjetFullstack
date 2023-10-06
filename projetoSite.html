@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vampiros no cinema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        iframe, img{
+            border-radius: 20px;
+        }
+        .imgright{
+            float: right;
+            margin: 10px;
+        }
+        iframe{
+            margin:10px;
+            float: left;
+        }
+        body{ 
+            background-color: #f5ebbe;
+        }
+        p, li, h2, h1, h4{
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: justify;
+        }
+        .img_text P{
+            float: left;
+            width: 700px;
+            margin:10px;
+        }
+        .img_frame P{
+            float: right;
+            width: 700px;
+            margin:10px;
+        }
+        .menu{
+            list-style: none;
+            border: 1px solid #ccc;
+            float: left;
+            padding: 2px;
+            font-size: large;
+            border-radius: 20px;
+        }
+        .menu li{
+            position: relative;
+            float: left;
+            padding: 10px;
+            border-right:5px solid coral;
+            border-radius: 20px;
+        }
+        .menu li ul{
+            position: absolute;
+            background-color: #fff;
+            top: 40px;
+            display: none;
+            padding: 5px;
+        }
+        .menu li:hover ul{
+            display: block;
+            padding: 5px;
+        }
+        .menu li ul li{
+            border: 1px solid #ccc;
+            display: block;
+            width: 150px;
+        }
+        .menu li a{
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+        .menu li a:hover{
+            background: coral;
+            color:#fff;
+            text-shadow: 0px 0px 5px #fff;
+            border-radius: 20px;
+        }
+        .img_text{
+            width: 1500px;
+            height: 420px;
+        }
+        .img_frame{
+            width: 1500px;
+            height: 420px;
+        }
+        legend{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(255, 187, 170);">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+            <a class="navbar-brand" href="#">
+                <img src="./img/senac.png" width="25%" height="25%" class="m-1">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Conteudo">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Conteudo">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastro</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Cursos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Desenvolvedor Fullstack</a>
+                        <a class="dropdown-item" href="#">Desenvolvedor de Sistemas</a>
+                        <a class="dropdown-item" href="#">Excell Avançado</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-sucess my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br><br><h1> Os vampiros mais famosos do cinema</h1>
+<b><ol reversed></b>
+<li><h2> Nosferatu - Nosferatu (1922)</h2>
+<div class="img_text">    
+<img class="imgright" width="700" height="400" src="nosferatus.jpg" alt="nosferatus" usemap="#nosferatus">
+<p> Nosferatu é um filme clássico do expressionismo alemão. Produzido em 1922, suas imagens de horror ainda conseguem nos surpreender. Foi baseado no romance Drácula, de Bram Stoker (1897). Ao invés de Conde Drácula, aqui temos Conde Graffi Orlok, uma das mais fiéis representações cinematográficas do vampiro. Alto, esguio, esquálido, com orelhas, nariz e dentes pontiagudos.</p>
+</div>
+<div class="img_frame"> 
+
+<p>Orlok mora sozinho em um vasto castelo escondido entre os picos escarpados em um canto perdido das montanhas dos Cárpatos. Embora baseado no Conde Drácula, Orlok não possui nenhum charme aristocrático ou sedução de seu antecessor. Ele se assemelha a relatos folclóricos históricos de vampiros, que foram descritos como cadáveres ambulantes habitados por uma presença demoníaca.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/_UnDFjdKAWk?si=G2NUQWorgFWxxoA3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+</div>
+<li><h2> Lestat - Entrevista com o Vampiro (1994)</h2>
+<div class="img_text"> 
+<img class="imgright" width="700" height="400" src="lestat.jpg" alt="lestat" usemap="#lestat">
+<p>Lestat de Lioncourt simboliza um vampiro como um ser ousado, entusiasmado e desafiador, que se delicia com sua própria arrogância e atitude vaidosa, e carrega-se com a aura de riqueza e direito que vem apenas de uma educação privilegiada, ganhando o título carinhoso de “o Príncipe Pirralho” por seus vampiros mais velhos.</p></div>
+<div class="img_frame"> 
+<p>Lestat nasceu em 1760, em Auvergne, França, em um castelo pertencente a seus antepassados. Apesar da sua aparente nobreza ele cresceu em uma pobreza relativa; seus antepassados esbanjaram as riquezas da família dilapidando assim a fortuna familiar.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/NUrgBxBsaas?si=xe1kA0zkaggq9kbv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2> Blade-Blade (1998)</h2>
+<div class="img_text"> 
+<img class="imgright" width="700" height="400" src="blade.jpg" alt="blade" usemap="#blade">
+<p>Blade é um dampiro, um meio vampiro e meio humano. Isso lhe confere habilidades vampíricas como regeneração espontânea, força, reflexos, velocidade, fôlego e agilidade sobre-humanas e não envelhece.</p></div>
+<div class="img_frame">
+<p>Blade também não tem nenhuma fraqueza dos vampiros: pode andar de dia e pode fazer tudo que um vampiro não pode, exceto que às vezes sente necessidade de beber sangue. O personagem da Marvel Comics também é um mestre em artes marciais e em disfarces. Além de ótimo espadachim e com suas habilidades vampíricas pode sentir a presença de criaturas sobrenaturais.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/kaU2A7KyOu4?si=FGte2ufaHcVRT-IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2>Dracula -  Drácula de Bram Stoker (1992)</h2>
+<div class="img_text"> 
+<img class="imgright" width="700" height="400" src="dracula.jpg" alt="dracula" usemap="#dracula">
+<p>Drácula é um personagem fictício que dá título ao romance de horror gótico escrito por Bram Stoker em 1897. O personagem é o mais famoso vampiro da ficção, e segundo o Guiness Book, é o monstro e vilão fictício com maior número de aparições na mídia, direta ou indiretamente. O personagem também é creditado no romance como um dos precursores da origem das lendas sobre lobisomens.</p></div>
+
+<div class="img_frame">
+<p>De acordo com especulações (não há confirmação do fato), o autor serviu-se de uma figura real para compor seu protagonista: Vlad Tepes (Vlad, o Impalador, em romeno), sanguinário voivoda da Valáquia, hoje Romênia, que tinha o hábito de trespassar os prisioneiros de guerra com imensas lanças.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/CjgwUB1CXek?si=UgRnMUYOOFRN_IyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2> Edward- Crepúsculo (2008)</h2>
+<div class="img_text">
+<img class="imgright" width="700" height="400" src="edward.jpg" alt="edward" usemap="#edward">
+<p>Depois de quase morrer da gripe espanhola em 1918 em Chicago, Edward foi transformado em vampiro por Carlisle Cullen, como a única alternativa à morte. Ao longo dos próximos noventa anos, a dupla reuniu uma família de vampiros em torno de si e se autodenominavam “vegetarianos”.</p></div>
+<div class="img_frame">
+<p>Edward é um vampiro telepático e membro fundador do coven Olímpico e teve um período rebelde no início de sua vida de vampiro e deixou Carlisle e Esme em 1927. Durante seu tempo solitário, ele usou sua habilidade de ler a mente para atacar as piores pessoas da sociedade, pensando que, desde que ele estivesse servindo à justiça, não importaria que ele estivesse se alimentando de humanos. Sua primeira vítima foi o ex-marido abusivo de Esme, Charles Evenson. Alguns anos depois, ele se arrependeu dessa decisão e voltou para a família de Carlisle e sua dieta de sangue animal.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/Ru8THEGdcEU?si=uARKLxNnAY9e7HYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2>Barnabas- Sombras da Noite (2012)</h2>
+<div class="img_text">
+<img class="imgright" width="700" height="400" src="barnabas.jpg" alt="barnabas" usemap="#barnabas">
+<p>Barnabas Collins é um vampiro de 175 anos em busca de sangue fresco e seu amor perdido, Josette.</p></div>
+<div class="img_frame">
+<p>As habilidades de Barnabas imitam as do vampiro clássico Drácula e incluem imortalidade, força sobre-humana, velocidade sobre-humana, hipnotismo e as habilidades de se transformar em um morcego e desaparecer e reaparecer à vontade. No entanto, Barnabas também é conhecido por usar feitiçaria.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/bvhQ2pbZ2fI?si=AnQJExLoFyCPpftl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2>Adam e Eve - Amantes Eternos (2013)</h2>
+<div class="img_text">
+<img class="imgright" width="700" height="400" src="tilda.webp" alt="tilda" usemap="#tilda">
+<p>Dirigido por Jim Jarmusch, Amantes Eternos conquista por seu excelente elenco, liderado por Tilda Swinton e Tom Hiddleston como um casal de vampiros imortais.</p></div>
+<div class="img_frame">
+<p>A trama acompanha os altos e baixos do relacionamento eterno das criaturas, e mostra como eles lidam quando uma força exterior ameaça essa relação de séculos.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/UtBEdMKmNYs?si=eoCTvSTpnYf9EL7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2>Conde Drácula e Mavis - Hotel Transilvânia</h2>
+<div class="img_text">
+<img class="imgright" width="700" height="400" src="hotel-transilvania.jpg" alt="hotel-transilvania" usemap="#hotel-transilvania">
+<p>Uma versão completamente diferente da história, essa comédia animada acompanha um Drácula, dublado originalmente por Adam Sandler, que abre um hotel para atender aos monstros mais infames do mundo.</p></div>
+<div class="img_frame">
+<p>Quando o vampiro convida seus amigos assombrosos para comemorar o 118º aniversário de sua amada filha Mavis (Selena Gomez), eles são interrompidos pela chegada fortuita do jovem humano Jonathan (Andy Samberg) – que prontamente rouba o coração da jovem vampira.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/WtyiO4ZpbmM?si=tX1MzSZAcNNO8N1L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2>Drácula: A História Nunca Contada (2014)</h2>
+<div class="img_text">
+<img class="imgright" width="700" height="400" src="Drácula-A-História-Nunca-Contada.jpg" alt="Drácula-A-História-Nunca-Contada" usemap="#Drácula-A-História-Nunca-Contada">
+<p>Quem busca os melhores filmes de vampiro e gosta de um pouco de ação, tem chances de curtir Drácula: A História Nunca Contada, do diretor Gary Shore. Na trama, somos apresentados a uma disputa constante entre os habitantes da Transilvânia e os do Império Otomano.</p></div>
+
+<div class="img_frame">
+<p>Para evitar que a população da Transilvânia fosse totalmente massacrada, o rei aceitou entregar aos turcos centenas de crianças, entre elas o seu próprio filho, chamado Vlad Tepes (Luke Evans).Anos mais tarde, Vlad volta à terra natal, onde é condecorado príncipe e governa em paz por um bom tempo. Sua tranquilidade é interrompida, no entanto, quando o rei turco Mehmed (Dominic Cooper) exige que mais 100 crianças sejam entregues ao seu império. Sem aceitar tal situação, Vlad se recusa a obedecer e trava uma batalha ferrenha na qual precisará de muita perspicácia para conseguir sobreviver.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/UBd_x0KOCFU?si=g6eEIcqdZsuA3hV5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li></div>
+
+<li><h2>Viago- What we do in the shadows(2014)</h2>
+<div class="img_text">
+<img class="imgright" width="700" height="400" src="whatwedo.jpg" alt="whatwedo" usemap="#whatwedointheshadows">
+<p>Um filme que conta a história de três vampiros que precisam lidar com as normalidades de uma vida humana, além dos desafios que ser um vampiro os coloca. Viago, Deacon e Vladislav dividem uma casa e precisam achar meios de coletar sangue humano, lavar as louças, pagar as contas e lidar com a luz solar. Um filme que aproxima os vampiros dos dilemas do mundo humano. Uma ótima comédia de vampiros. Lançado em 2014, este filme acompanha um grupo de cineastas que, munidos de crucifixo e um pouco de coragem, decidem entrar na casa do Grande Vampiro.</p></div>
+<div class="img_frame">
+<p>O intuito dos profissionais é gravar o dia a dia de quatro imortais que dividem um apartamento no subúrbio da Nova Zelândia e têm que enfrentar tarefas corriqueiras como lavar as louças ou limpar os móveis de sangue das vítimas. Ao mesmo tempo que lidam com o cotidiano, eles tentam se manter atualizados com a vida moderna e as novas tecnologias.
+
+Mesclando comédia e terror, este longa escrito e dirigido por Taika Waititi e Jemaine Clement é mais uma daquelas opções para quem quer relaxar e dar boas risadas.</p>
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/IAZEWtyhpes?si=pYfwHQahwMcf8ROQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></ol></li></div>
+<div class="comentario">
+
+    <legend>Deixe seu comentário: </legend>
+    <div class="container mt-4">
+    <label for="email">Email:</label>
+    <input class="form-control rounded" type="text" id="email" name="email"></div>
+    <div class="container mt-4">
+        <div class="form-group">
+            <textarea class="form-control rounded" id="campocomentario" rows="4"></textarea>
+        </div>
+    </div>
+    <br>
+    <div class="container mt-4">
+    <input class="form-control rounded" type="submit" value="Enviar"><br></div>
+    <br>
+</div>
+</body>
