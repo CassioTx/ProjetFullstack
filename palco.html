@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plano de Iluminação</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+    }
+    .stage {
+        position: relative;
+        width: 800px;
+        height: 400px;
+        background-color: #d61717;
+    }
+    .audience {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #5703df;
+    }
+    .background {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        background-color: #12f70a;
+    }
+    .left-wing{
+        position: absolute;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: #06d7f3;
+    }
+    .right-wing {
+        position: absolute;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background-color: #f306b8;
+    }
+    .left-wing {
+        left: 0;
+    }
+    .right-wing {
+        right: 0;
+    }
+    
+    .spotlight {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff ;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+        
+    }
+    #spotlight1 { top: 50px; left: 50px; }
+    #spotlight2 { top: 50px; left: 400px; }
+    #spotlight3 { top: 50px; left: 750px; }
+    #spotlight4 { top: 200px; left: 50px; }
+    #spotlight5 { top: 200px; left: 400px; }
+    #spotlight6 { top: 200px; left: 750px; }
+    .spotlight:hover {
+        background-color: #ff00ff; /* Cor do holofote quando o mouse passa por cima */
+    }
+</style>
+</head>
+<body>
+    <div class="stage">
+        <div class="audience"></div>
+        <div class="background"></div>
+        <div class="left-wing"></div>
+        <div class="right-wing"></div>
+        <div class="foyer"></div>
+        <div class="spotlight" id="spotlight1"></div>
+        <div class="spotlight" id="spotlight2"></div>
+        <div class="spotlight" id="spotlight3"></div>
+        <div class="spotlight" id="spotlight4"></div>
+        <div class="spotlight" id="spotlight5"></div>
+        <div class="spotlight" id="spotlight6"></div>
+    </div>
+</body>
+</html>
